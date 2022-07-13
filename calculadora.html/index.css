@@ -1,0 +1,199 @@
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container h1 {
+    align-items: center;
+    color: blueviolet;
+}
+
+.container .calculadora{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.numeros-resultados{
+    display: flex;
+    background-color: #817180;
+    width: 300px;
+    justify-content: flex-end;
+}
+
+.numeros-resultados h3 {
+    display: flex;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 5px 5px 0px;
+    align-items: flex-end;
+    
+}
+
+.primera-linea {
+    display: flex;
+    width: 300px;
+    background-color: #8b8d98;
+    background-image: linear-gradient(43deg, #8b8d98 0%, #817180 30%, #c1a1a1 66%, #ffffff 100%);
+
+}
+
+.primera-linea .button-AC {
+    border: 1px solid black;
+    width: 50%;    
+}
+
+
+.primera-linea .button-del {
+    border: 1px solid black;
+    width: 25%;
+}
+
+.primera-linea .button-division {
+    border: 1px solid black;
+    width: 25%;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+h3 {
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+}
+
+.segunda-linea {
+    display: flex;
+    width: 300px;
+    background-color: #eeeef3;
+    background-image: linear-gradient(43deg, #eeeef3 0%, #f1e9f0 22%, #cac6c6 49%, #c1a3a3 75%, #ffffff 100%);
+}
+
+.segunda-linea .numero7 {
+    border: 1px solid black;
+    box-sizing: border-box;      /*ver tema borde, desalineado*/
+    width: 25%;
+}
+
+.segunda-linea .numero8 {
+    border: 1px solid black;
+    width: 25%;
+}
+
+.segunda-linea .numero9 {
+    border: 1px solid black;
+    width: 25%;
+}
+
+.segunda-linea .button-multiplication {
+    border: 1px solid black;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+    width: 25%;    
+}
+
+.tercera-linea {
+    display: flex;
+    width: 300px;
+    background-color: #eeeef3;
+    background-image: linear-gradient(43deg, #eeeef3 0%, #f1e9f0 22%, #cac6c6 49%, #c1a3a3 75%, #ffffff 100%);
+
+}
+
+.tercera-linea .numero4 {
+    border: 1px solid black;
+    box-sizing: border-box;      /*ver tema borde, desalineado*/
+    width: 25%;
+}
+
+.tercera-linea .numero5 {
+    border: 1px solid black;
+    width: 25%;
+}
+
+.tercera-linea .numero6 {
+    border: 1px solid black;
+    width: 25%;
+}
+
+.tercera-linea .resta {
+    border: 1px solid black;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    width: 25%;    
+}
+
+.cuarta-linea {
+    display: flex;
+    width: 300px;
+    background-color: #eeeef3;
+    background-image: linear-gradient(43deg, #eeeef3 0%, #f1e9f0 22%, #cac6c6 49%, #c1a3a3 75%, #ffffff 100%);
+}
+
+.cuarta-linea .numero1 {
+    border: 1px solid black;
+    box-sizing: border-box;      /*ver tema borde, desalineado*/
+    width: 25%;
+}
+
+.cuarta-linea .numero2 {
+    border: 1px solid black;
+    width: 25%;
+}
+
+.cuarta-linea .numero3 {
+    border: 1px solid black;
+    width: 25%;
+}
+
+.cuarta-linea .suma {
+    border: 1px solid black;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    width: 25%;    
+}
+
+.quinta-linea {
+    display: flex;
+    width: 300px;
+    background-color: #eeeef3;
+    background-image: linear-gradient(43deg, #eeeef3 0%, #f1e9f0 22%, #cac6c6 49%, #c1a3a3 75%, #ffffff 100%);
+}
+
+.quinta-linea .numero0 {
+    border: 1px solid black;
+    width: 50%;    
+}
+
+
+.quinta-linea .button-point {
+    border: 1px solid black;
+    width: 25%;
+}
+
+.quinta-linea .button-igual {
+    border: 1px solid black;
+    width: 25%;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
