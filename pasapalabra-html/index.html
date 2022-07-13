@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Pasapalabra</title>
+            <link href="./index.css" rel="stylesheet"/>
+            <script src="./index.js" defer></script>
+        </head>
+        <body>
+            <div>
+                <h2 class="nombre-juego">PASAPALABRA</h2>
+            </div>
+            <div id="instrucciones">
+                <p class="instrucciones-juego">
+                    El juego consiste en acertar las veintisiete palabras, cada una de las cuales se corresponde con 
+                    una letra del rosco para la que se ofrece una definición relativa a un concepto. 
+                    <br> <br> Los aciertos se reflejarán en las letras mediante el color verde, mientras que los fallos se 
+                    mostrarán en color rojo y el tiempo se pausará. Para seguir con el juego,
+                    deberá clicar en el botón <i>reanudar</i>. <br> <br>Las respuestas que se le dan el "pasapalabra" se mostrarán en color amarillo y pasará lo mismo con los errores en cuanto a reanudar el tiempo.<br>
+                    <br>Para completar el rosco se dispone de un tiempo determinado: 300segundos.
+                    <br><br><b>IMPORTANTE:</b> si hay palabras que se escriben con tilde, debe obviar de ponérselos.    
+                </p>
+            </div>
+            <div id="rosco" class="container">
+                <div id="letra-A" class="circulo-letra">A</div>
+                <div id="letra-B" class="circulo-letra">B</div>
+                <div id="letra-C" class="circulo-letra">C</div>
+                <div id="letra-D" class="circulo-letra">D</div>
+                <div id="letra-E" class="circulo-letra">E</div>
+                <div id="letra-F" class="circulo-letra">F</div>
+                <div id="letra-G" class="circulo-letra">G</div>
+                <div id="letra-H" class="circulo-letra">H</div>
+                <div id="letra-I" class="circulo-letra">I</div>
+                <div id="letra-J" class="circulo-letra">J</div>
+                <div id="letra-K" class="circulo-letra">J</div>
+                <div id="letra-L" class="circulo-letra">L</div>
+                <div id="letra-M" class="circulo-letra">M</div>
+                <div id="letra-N" class="circulo-letra">N</div>
+                <div id="letra-Ñ" class="circulo-letra">Ñ</div>
+                <div id="letra-O" class="circulo-letra">O</div>
+                <div id="letra-P" class="circulo-letra">P</div>
+                <div id="letra-Q" class="circulo-letra">Q</div>
+                <div id="letra-R" class="circulo-letra">R</div>
+                <div id="letra-S" class="circulo-letra">S</div>
+                <div id="letra-T" class="circulo-letra">T</div>
+                <div id="letra-U" class="circulo-letra">U</div>
+                <div id="letra-V" class="circulo-letra">V</div>
+                <div id="letra-W" class="circulo-letra">W</div>
+                <div id="letra-X" class="circulo-letra">X</div>
+                <div id="letra-Y" class="circulo-letra">Y</div>
+                <div id="letra-Z" class="circulo-letra">Z</div>
+            <div id="nombre-jugador">
+                <label for="input">Introduzca su nombre</label>
+                <input id="nombre" type="text">
+                <button class="enviar-nombre">OK</button>
+            </div>
+            <div>
+                <p class="mensaje2"></p>
+            </div>
+            <div id="tabla-ranking">
+                <table class="ranking">
+                    <tr>
+                        <td></td>
+                     </tr>
+                </table> 
+            </div>
+            <div  class="comenzar">
+                <button class="comenzar-juego">COMENZAR</button>
+                <p class="tiempo"></p>
+            </div>
+            </div>
+            <div id="pregunta" class="container-preguntas">     
+            </div>
+            <div>
+                <p class="mensaje"></p>
+            </div>
+            <div id="respuesta-jugador">
+                <input id="respuesta" type="text">
+                <button class="enviar-respuesta">OK</button> 
+                <button class="pasapalabra">PASAPALABRA</button>
+                <button class="parar-juego">STOP</button>
+                <button class="reanudar-juego">REANUDAR</button>
+            </div>
+        </body>
+    </html>
