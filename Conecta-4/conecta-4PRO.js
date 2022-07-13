@@ -17,13 +17,13 @@ inicio();
 
 let vsMaquina = false;
 function jugarVsMaquina() {
-    let mensajeInicio = document.getElementsByClassName('inicio')[0];
+    const mensajeInicio = document.getElementsByClassName('inicio')[0];
     mensajeInicio.innerText = 'Comenzará el juego la máquina. Luego, elige tú dónde pondrás tu primera ficha y...  ¡A JUGAR!'
 
-    let botones = document.querySelectorAll('.boton-inicio');
+    const botones = document.querySelectorAll('.boton-inicio');
     botones.forEach(boton => boton.style.visibility = 'hidden');
 
-    let botonesInsertar = document.querySelectorAll('.insertar');
+    const botonesInsertar = document.querySelectorAll('.insertar');
     botonesInsertar.forEach(boton => boton.disabled = false)
 
     vsMaquina = true
@@ -32,13 +32,13 @@ function jugarVsMaquina() {
 
 
 function jugarVsJugador() {
-    let mensajeInicio = document.getElementsByClassName('inicio')[0];
+    const mensajeInicio = document.getElementsByClassName('inicio')[0];
     mensajeInicio.innerText = '¡A JUGAR!'
 
-    let botones = document.querySelectorAll('.boton-inicio');
+    const botones = document.querySelectorAll('.boton-inicio');
     botones.forEach(boton => boton.style.visibility = 'hidden');
 
-    let botonesInsertar = document.querySelectorAll('.insertar');
+    const botonesInsertar = document.querySelectorAll('.insertar');
     botonesInsertar.forEach(boton => boton.disabled = false);
 
     return true
@@ -189,18 +189,18 @@ document.getElementsByClassName('sexta-columna')[0].addEventListener('click', ()
 document.getElementsByClassName('septima-columna')[0].addEventListener('click', () => clickInsertarFicha(6));
 
 function preguntarVolverAJugar() {
-    let volverAjugar = document.getElementsByClassName('volver-jugar')[0];
+    const volverAjugar = document.getElementsByClassName('volver-jugar')[0];
     volverAjugar.style.visibility = 'visible';
     vsMaquina = false;
 }
 
 
-isSomeoneWin = false; 
+ let isSomeoneWin = false; 
 
 function desactivarBotonesAlGanar() {
 
     if (isSomeoneWin) {
-        let botonesInsertar = document.querySelectorAll('.insertar');
+        const botonesInsertar = document.querySelectorAll('.insertar');
         botonesInsertar.forEach(boton => boton.disabled = true);
     }
 
@@ -208,10 +208,10 @@ function desactivarBotonesAlGanar() {
 }
 
 function verificarEmpate() {
-    let mensajeFinal = document.getElementsByClassName('mensaje-Final')[0];
+    const mensajeFinal = document.getElementsByClassName('mensaje-Final')[0];
 
-   let hayEmpate = tablero.every(fila => {
-        let filaSinBlancos = fila.every(celda => {
+   const hayEmpate = tablero.every(fila => {
+        const filaSinBlancos = fila.every(celda => {
             if (celda !== 'bl') {
                 return true
             } else {
@@ -318,7 +318,7 @@ function verificacionCuatroEnDiagonal() {
 
     contador = 0;
     for (let i = 1; i < 6; i++) {
-         let j = i - 1;
+         const j = i - 1;
        
         if (turnoFichaColor === tablero[i][j]) {
             contador++;
@@ -330,7 +330,7 @@ function verificacionCuatroEnDiagonal() {
 
     contador = 0;
     for (let i = 2; i < 6; i++) {
-        let j = i - 2;
+        const j = i - 2;
       
        
        if (turnoFichaColor === tablero[i][j]) {
@@ -343,7 +343,7 @@ function verificacionCuatroEnDiagonal() {
 
     contador = 0;
     for (let i = 0; i < 6; i++) {
-        let j = i + 1;
+        const j = i + 1;
 
         if (turnoFichaColor === tablero[i][j]) {
             contador++;
@@ -355,7 +355,7 @@ function verificacionCuatroEnDiagonal() {
 
     contador = 0;
     for(let i = 0; i < 5; i++) {
-        let j = i + 2;
+        const j = i + 2;
 
         if (turnoFichaColor === tablero[i][j]) {
             contador++;
@@ -367,7 +367,7 @@ function verificacionCuatroEnDiagonal() {
 
     contador = 0;
     for(let i = 0; i < 4; i++) {
-        let j = i + 3;
+        const j = i + 3;
 
         if (turnoFichaColor === tablero[i][j]) {
             contador++;
@@ -446,9 +446,7 @@ function verificacionCuatroEnDiagonal() {
 
 function clickReiniciar() {
 
-    tablero = tablero.map(() => {
-        return ['bl', 'bl', 'bl', 'bl', 'bl', 'bl', 'bl', 'bl']   
-    });
+    tablero = tablero.map(() => ['bl', 'bl', 'bl', 'bl', 'bl', 'bl', 'bl', 'bl'];
 
     let celdas = document.querySelectorAll('.celda');
     celdas.forEach(celda => celda.style.backgroundColor = 'white')
